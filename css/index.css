@@ -1,0 +1,122 @@
+body {
+	font-family: "Times New Roman";
+	font-size: 16px;
+	cursor: default;
+}
+a {
+	font-weight: bold;
+	color: #6983B8;
+	text-decoration: none;
+}
+.frm {
+	float: left;
+	width: 320px;				
+}
+.tblC {
+	float: left;
+	border: 2px solid #6983B8;
+	margin: 8px;
+	padding: 5px;
+	width: 1056px;
+	height: 306px;
+	overflow: auto;
+}
+input[type="text"] {
+	width: 260px;
+	margin: 5px 0px 10px 10px;
+}
+.c {
+	clear: both;
+}
+legend {
+	color: #6983B8;
+}
+fieldset {
+	width: 292px;
+	height: 316px;
+	padding: 4px 12px;
+	border-style: solid;
+	border-color: #6983B8;
+}
+.mrgn {
+	margin-left: 10px;
+}
+.nr {
+	margin: 105px 0px 10px 10px;
+}
+.saver {
+	width: 160px;
+	height: 18px;
+	font-size: 90%;
+	padding-top: 2px;
+	background: url('../imgs/bttn.png');
+	text-align: center;
+	color: #2c2c2c;
+	cursor: pointer;
+	margin-top: 4px;
+	margin-left: 66px;
+}
+.saver:hover {
+	background: url('../imgs/bttn_h.png');
+	color: #000;
+}
+.c {
+	clear: both;
+}
+.row {
+	height: 22px;
+	width: 1040px;
+	padding: 3px 0px;
+	border-bottom: 1px solid #6983B8;
+	text-align: center;
+	overflow: hidden;
+}
+	.bld {
+		font-weight: bold;
+	}
+	.lft {
+		float: left;
+	}
+	.odd {
+		background-color: #EEEEEE;
+	}
+	.dbl {
+		background-color: #E6E6E6;
+	}
+		.Wd1 {
+			width: 140px;
+		}
+		.Wd2 {
+			width: 200px;
+		}
+		.Wd3 {
+			width: 160px;
+		}
+			.modImg {
+				background: url('../imgs/ed.png');
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				position: relative;
+				left: 5px;
+				cursor: pointer;
+			}
+				.modImg:hover {
+					background: url('../imgs/ed_2.png');
+				}
+			.spc {
+				width: 40px;
+				height: 20px;
+				display: inline-block;
+			}
+			.delImg {
+				background: url('../imgs/del.png');
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+				position: relative;
+				left: 10px;
+			}
+				.delImg:hover {
+					background: url('../imgs/del_2.png');
+				}

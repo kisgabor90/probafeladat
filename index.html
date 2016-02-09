@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title></title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="Kis Gábor">
+		<script type ="text/javascript" src="js/jquery.js"></script>
+		<script type ="text/javascript" src="js/jquery.jdpicker.js"></script>
+		<link rel="stylesheet" href="css/jdpicker.css" type="text/css" media="screen" />
+		<script type ="text/javascript" src="js/index.js"></script>		
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body onload="MyRequest(5, 0);">	
+		<div class="frm">
+			<form>
+				<fieldset>
+					<legend>Kérem adja meg az alábbi adatokat</legend>
+					Név:<br>
+					<input type="text" id="name" name="name" value="Teljes név" onclick="hidestuff(this);" onblur="checkMe(1, this);">
+					<br>
+					Telefonszám:
+					<br>
+					<span class="mrgn">+36</span><input type="text" id="number" name="number" value="(xx) xxx-xxxx" maxlength="13" onkeypress="return isNumber(event, this);" onclick="hidestuff(this);" style="margin-left: 5px; width: 230px;" onblur="checkMe(2, this);">
+					<br>
+					Születésnap:<br>
+					<input type="text" id="bdate" name="bdate" value="éééé/hh/nn" class="jdpicker">
+					Helyadatok:<br>
+					<input type="text" id="city" name="city" value="Irányítószám, város" onclick="hidestuff(this);" onblur="checkMe(3, this);">
+					<br>
+					Cím:<br>
+					<input type="text" id="address" name="address" value="Utca, házszám/emelet/ajtó" onclick="hidestuff(this);" onblur="checkMe(4, this);">
+					<a href="#" onclick="showMap();">&raquo;</a>
+					<div id="btn" class="saver" onclick="MyRequest(1, 0);">Mentés</div>
+				</fieldset>
+			</form>
+		</div><!-- /frm -->
+		<div class="tblC">
+			<div class='row odd bld'>
+				<div class='row lft Wd2'>Név</div>
+				<div class='row lft Wd1'>Telefonszám</div>
+				<div class='row lft Wd1'>Születési dátum</div>
+				<div class='row lft Wd2'>Helyadatok</div>
+				<div class='row lft Wd2'>Pontos cím</div>
+				<div class='row lft Wd3'>Módosítás - Törlés</div>
+				<div class='c'></div>
+			</div>
+			<div id="tbl"></div>
+		</div>
+		<div class="c"></div>
+	</body>
+</html>
